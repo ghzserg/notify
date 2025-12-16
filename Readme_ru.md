@@ -42,7 +42,7 @@
 
 ### Финал
 
-В файле `mod_data/notify.txt` должно быть чтото похожее:
+В файле `mod_data/notify.txt` должно быть что-то похожее:
 ```
 [notify]
 url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
