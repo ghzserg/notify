@@ -5,7 +5,7 @@ source /opt/config/mod/.shell/0.sh
 INC="[include plugins/notify/${ZLANG}/moonraker.notify.cfg]"
 FILE="/opt/config/mod_data/plugins.moonraker.conf"
 
-grep -q "${INC}" "${FILE}" || echo "${INC}" >> "${FILE}"
+grep -qF "${INC}" "${FILE}" || echo "${INC}" >> "${FILE}"
 
 [ -f /root/printer_data/moonraker.secrets ] || echo "[notify]
 url: tgram://{bottoken}/{ChatID}

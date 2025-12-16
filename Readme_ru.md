@@ -48,6 +48,6 @@
 url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 ```
 
-В консоли Fluidd/Moonraker запустите макрос ```UPDATE_NOTIFY```
+В консоли Fluidd/Moonraker **запустите макрос** ```UPDATE_NOTIFY```
 
 Дождитесь перезагрузки

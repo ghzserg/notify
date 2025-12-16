@@ -48,6 +48,6 @@ The `mod_data/notify.txt` file should contain something similar to:
 url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 ```
 
-In the Fluidd/Moonraker console, run the macro ```UPDATE_NOTIFY```.
+In the Fluidd/Moonraker console, **run the macro** ```UPDATE_NOTIFY```.
 
 Wait for the system to reload.
