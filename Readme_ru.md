@@ -51,3 +51,5 @@ url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 В консоли Fluidd/Moonraker **запустите макрос** ```UPDATE_NOTIFY```
 
 Дождитесь перезагрузки
+
+**Отправить уведомление можно макросом ```_NOTIFY MSG=Test``` из консоли Fluidd/Mainsail**

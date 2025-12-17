@@ -51,3 +51,5 @@ url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 In the Fluidd/Moonraker console, **run the macro** ```UPDATE_NOTIFY```.
 
 Wait for the system to reload.
+
+**You can send a notification using the macro ```_NOTIFY MSG=Test``` from the Fluidd/Mainsail console**
