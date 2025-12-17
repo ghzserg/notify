@@ -32,6 +32,7 @@ How to register your own bot
 3. Enter any name you like
 4. Enter the bot username: `ff5msuper_bot` - it must end with `_bot`.
 5. You will receive a long token - it needs to be inserted into `mod_data/notify.txt`, replacing `{bottoken}` (e.g., `1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE`)
+6. **Find the bot you created in Telegram and send it any message**
 
 ### Get ChatID
 
@@ -60,6 +61,4 @@ url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 
 3. Wait for the reboot
 
-4. Find the bot you created in Telegram and send it any message
-
-5. **You can send a notification using the macro ```_NOTIFY MSG=Test``` from the Fluidd/Mainsail console**
+4. **You can send a notification using the macro ```_NOTIFY MSG=Test``` from the Fluidd/Mainsail console**
