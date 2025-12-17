@@ -31,25 +31,35 @@
 2. `/newbot`
 3. Вводите любое имя, которое  вам нравится
 4. Вводите имя бота  ff5msuper_bot - обязательно _bot  в конце.
-5. Получаете длинный ID - его нужно будет прописать в настройках бота в `mod_data/notify.txt` заменив `{bottoken}`
+5. Получаете длинный ID - его нужно будет прописать в `mod_data/notify.txt` заменив `{bottoken}` (например `1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE`)
 
 ### Получить ChatID
 
 1. Идете к [@RawDataBot](https://t.me/RawDataBot)
 2. `/start`
 3. Находите параметр `message->chat->id`
-4. Получаете длинный ID - его нужно будет прописать в настройках бота в `mod_data/notify.txt` заменив `{ChatID}`
+4. Получаете длинный ID - его нужно будет прописать в `mod_data/notify.txt` заменив `{ChatID}` (например `123456789`)
 
 ### Финал
 
-В файле `mod_data/notify.txt` должно быть что-то похожее:
+1. В файле `mod_data/notify.txt` было:
+
+```
+[notify]
+url: tgram://{bottoken}/{ChatID}
+```
+
+Стало:
+
 ```
 [notify]
 url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 ```
 
-В консоли Fluidd/Moonraker **запустите макрос** ```UPDATE_NOTIFY```
+2. В консоли Fluidd/Moonraker **запустите макрос** ```UPDATE_NOTIFY```
 
-Дождитесь перезагрузки
+3. Дождитесь перезагрузки
 
-**Отправить уведомление можно макросом ```_NOTIFY MSG=Test``` из консоли Fluidd/Mainsail**
+4. Найдите в Telegram бота, которого вы создали и напишите ему любое сообщение
+
+5. **Отправить уведомление можно макросом ```_NOTIFY MSG=Test``` из консоли Fluidd/Mainsail**

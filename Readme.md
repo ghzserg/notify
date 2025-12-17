@@ -22,34 +22,44 @@ To configure, you need to:
 
 You can find a list of possible URLs on the [Apprise](https://github.com/caronc/apprise) page.
 
-## Example: Telegram Setup
+## Telegram Setup Example
 
 ### Bot Registration
 
-How to register your bot
+How to register your own bot
 1. Go to [@BotFather](https://t.me/BotFather)
-2. Type `/newbot`
-3. Enter any name you like.
-4. Enter the bot name, e.g., `ff5msuper_bot` - it must end with `_bot`.
-5. You will receive a long ID (token) - you will need to enter it in the bot settings in `mod_data/notify.txt`, replacing `{bottoken}`.
+2. Send `/newbot`
+3. Enter any name you like
+4. Enter the bot username: `ff5msuper_bot` - it must end with `_bot`.
+5. You will receive a long token - it needs to be inserted into `mod_data/notify.txt`, replacing `{bottoken}` (e.g., `1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE`)
 
 ### Get ChatID
 
 1. Go to [@RawDataBot](https://t.me/RawDataBot)
-2. Type `/start`
+2. Send `/start`
 3. Find the parameter `message->chat->id`
-4. You will receive a long ID - you need to enter it in the bot settings in `mod_data/notify.txt`, replacing `{ChatID}`.
+4. You will receive a long ID - it needs to be inserted into `mod_data/notify.txt`, replacing `{ChatID}` (e.g., `123456789`)
 
-### Final Step
+### Final Steps
 
-The `mod_data/notify.txt` file should contain something similar to:
+1. In the file `mod_data/notify.txt`, it was:
+
+```
+[notify]
+url: tgram://{bottoken}/{ChatID}
+```
+
+It becomes:
+
 ```
 [notify]
 url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 ```
 
-In the Fluidd/Moonraker console, **run the macro** ```UPDATE_NOTIFY```.
+2. In the Fluidd/Moonraker console, **run the macro** ```UPDATE_NOTIFY```
 
-Wait for the system to reload.
+3. Wait for the reboot
 
-**You can send a notification using the macro ```_NOTIFY MSG=Test``` from the Fluidd/Mainsail console**
+4. Find the bot you created in Telegram and send it any message
+
+5. **You can send a notification using the macro ```_NOTIFY MSG=Test``` from the Fluidd/Mainsail console**
