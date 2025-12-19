@@ -57,7 +57,7 @@ How to register your own bot
    url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
    ```
 
-**Don't remove ```url: ```, even if you're not configuring Telegram. Otherwise, errors will occur.**
+   **Don't remove ```url: ```, even if you're not configuring Telegram. Otherwise, errors will occur.**
 
 2. In the Fluidd/Moonraker console, **run the macro** ```UPDATE_NOTIFY```
 
