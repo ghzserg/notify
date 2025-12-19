@@ -44,18 +44,18 @@ How to register your own bot
 ### Final Steps
 
 1. In the file `mod_data/notify.txt`, it was:
-
-```
-[notify]
-url: tgram://{bottoken}/{ChatID}
-```
-
-It becomes:
-
-```
-[notify]
-url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
-```
+   
+   ```
+   [notify]
+   url: tgram://{bottoken}/{ChatID}
+   ```
+   
+   It becomes:
+   
+   ```
+   [notify]
+   url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
+   ```
 
 **Don't remove ```url: ```, even if you're not configuring Telegram. Otherwise, errors will occur.**
 
