@@ -57,6 +57,8 @@ url: tgram://{bottoken}/{ChatID}
 url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
 ```
 
+**Не удаляйте ```url: ```, даже если вы настраиваете не телеграм. Иначе будут появляться ошибки.**
+
 2. В консоли Fluidd/Moonraker **запустите макрос** ```UPDATE_NOTIFY```
 
 3. Дождитесь перезагрузки
