@@ -44,20 +44,20 @@
 ### Финал
 
 1. В файле `mod_data/notify.txt` было:
-
-```
-[notify]
-url: tgram://{bottoken}/{ChatID}
-```
-
-Стало:
-
-```
-[notify]
-url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
-```
-
-**Не удаляйте ```url: ```, даже если вы настраиваете не телеграм. Иначе будут появляться ошибки.**
+   
+   ```
+   [notify]
+   url: tgram://{bottoken}/{ChatID}
+   ```
+   
+   Стало:
+   
+   ```
+   [notify]
+   url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
+   ```
+   
+   **Не удаляйте ```url: ```, даже если вы настраиваете не телеграм. Иначе будут появляться ошибки.**
 
 2. В консоли Fluidd/Moonraker **запустите макрос** ```UPDATE_NOTIFY```
 
