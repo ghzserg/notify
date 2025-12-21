@@ -22,6 +22,68 @@
 
 Список вариантов url можно получить на странице [Apprise](https://github.com/caronc/apprise)
 
+## Управление уведомлениями
+
+Принтер отправляет 2 типа уведомлений
+
+### Moonraker
+  Чтобы их выключить, нужно переопределить в `mod_data/user.moonraker.conf`
+
+- Старт печати
+  
+  ```
+  [notifier print_start]
+  events: none
+  ```
+
+- Завершение печати
+  
+  ```
+  [notifier print_complete]
+  events: none
+  ```
+
+- Ошибка печати
+  
+  ```
+  [notifier print_error]
+  events: none
+  ```
+
+- Отмена печати
+  
+  ```
+  [notifier print_cancelled]
+  events: none
+  ```
+
+- Пауза
+  
+  ```
+  [notifier print_paused]
+  events: none
+  ```
+
+- Возобнавление печати
+  
+  ```
+  [notifier print_resumed]
+  events: none
+  ```
+
+### zmod
+- При включении принтера
+  
+  ```SAVE_VARIABLE VARIABLE=notify_on VALUE=0```
+
+- При окончании печати (вызывается из `END_PRINT`)
+  
+  ```SAVE_VARIABLE VARIABLE=notify_end VALUE=0```
+
+- При сработке датчиков филамента
+  
+  ```SAVE_VARIABLE VARIABLE=notify_filament VALUE=0```
+
 ## Пример настройки Telegram
 
 ### Регистрация бота
