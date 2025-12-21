@@ -72,6 +72,8 @@
   ```
 
 ### zmod
+Чтобы их выключить, нужно:
+
 - При включении принтера
   
   ```SAVE_VARIABLE VARIABLE=notify_on VALUE=0```

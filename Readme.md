@@ -22,6 +22,70 @@ To configure, you need to:
 
 You can find a list of possible URLs on the [Apprise](https://github.com/caronc/apprise) page.
 
+## Notification Management
+
+The printer sends 2 types of notifications
+
+### Moonraker
+To turn them off, you need to override in `mod_data/user.moonraker.conf`
+
+- Print Start
+
+  ```
+  [notifier print_start]
+  events: none
+  ```
+
+- Print Complete
+
+  ```
+  [notifier print_complete]
+  events: none
+  ```
+
+- Print Error
+
+  ```
+  [notifier print_error]
+  events: none
+  ```
+
+- Print Cancelled
+
+  ```
+  [notifier print_cancelled]
+  events: none
+  ```
+
+- Pause
+
+  ```
+  [notifier print_paused]
+  events: none
+  ```
+
+- Print Resumed
+
+  ```
+  [notifier print_resumed]
+  events: none
+  ```
+
+### zmod
+To turn them off, you need to:
+
+- When the printer is turned on
+
+  ```SAVE_VARIABLE VARIABLE=notify_on VALUE=0```
+
+- At the end of a print (called from `END_PRINT`)
+
+  ```SAVE_VARIABLE VARIABLE=notify_end VALUE=0```
+
+- When filament sensors are triggered
+
+  ```SAVE_VARIABLE VARIABLE=notify_filament VALUE=0```
+
 ## Telegram Setup Example
 
 ### Bot Registration
