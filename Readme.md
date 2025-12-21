@@ -16,9 +16,20 @@ Run the command: ```DISABLE_PLUGIN name=notify```
 
 # Configuration
 
-To configure, you need to:
+To configure, you must:
 - Add the `url` in `mod_data/notify.txt`
+- Add the `name` in `mod_data/notify.txt`
 - Call the macro ```UPDATE_NOTIFY```
+
+To trigger a notification in your G-code, you need to use the macro ```_NOTIFY```
+
+It has 2 parameters:
+- PHOTO: 1 – take a photo (default), 0 – do not take a photo
+- MSG: The message to be sent
+
+Example: ```_NOTIFY MSG="Hello" PHOTO=0```
+
+The message `Hello` will be sent without a photo.
 
 You can find a list of possible URLs on the [Apprise](https://github.com/caronc/apprise) page.
 
