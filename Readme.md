@@ -105,6 +105,12 @@ How to register your own bot
 3. Find the parameter `message->chat->id`
 4. You will receive a long ID - it needs to be inserted into `mod_data/notify.txt`, replacing `{ChatID}` (e.g., `123456789`)
 
+### Set the printer name
+
+1. Open the `mod_data/notify.txt` file.
+2. Find or add the line `name: `
+3. Replace `{printer_name}` or add your printer’s name.
+
 ### Final Steps
 
 1. In the file `mod_data/notify.txt`, it was:
@@ -112,6 +118,7 @@ How to register your own bot
    ```
    [notify]
    url: tgram://{bottoken}/{ChatID}
+   name: {printer_name}
    ```
    
    It becomes:
@@ -119,6 +126,7 @@ How to register your own bot
    ```
    [notify]
    url: tgram://1234567890:AAAAAAAABBBBBBBBBBCCCCCCCDDDEEEEEEE/123456789
+   name: my_ad5x
    ```
 
    **Don't remove ```url: ```, even if you're not configuring Telegram. Otherwise, errors will occur.**
