@@ -31,6 +31,12 @@ Example: ```_NOTIFY MSG="Hello" PHOTO=0```
 
 The message `Hello` will be sent without a photo.
 
+If you want to receive print progress notifications every 5 percent, execute the following macro:
+
+```SAVE_VARIABLE VARIABLE=notify_percent VALUE=5```
+
+The value `5` can be replaced with any integer from 1 to 99.
+
 You can find a list of possible URLs on the [Apprise](https://github.com/caronc/apprise) page.
 
 ## Notification Management
