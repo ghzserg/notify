@@ -12,6 +12,7 @@ This plugin allows you to configure notifications for [numerous services](https:
 | **Print progress percentage** | + | + |
 | **Multiple printers via a single bot** | + | – |
 | **Notifications via other services** | + | – |
+| **Splooman** | - | + |
 
 **Table explanation:**
 *   **+** — feature is supported or implemented.
