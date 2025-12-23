@@ -169,3 +169,53 @@ How to register your own bot
 3. Wait for the reboot
 
 4. **You can send a notification using the macro ```_NOTIFY MSG=Test``` from the Fluidd/Mainsail console**
+
+## Matrix Setup Example
+
+### Bot Creation
+
+You need to create a bot for your printer via [**Synapse Admin**](https://github.com/Awesome-Technologies/synapse-admin) or it fork for from [**etke.cc**](https://github.com/etkecc/synapse-admin). If your Matrix server is not Synapse, you need find out for yoursef 🙃
+
+### Room Creation
+
+1. You need to create room from your or bot account and join (accept invitation), you both must be in same chat.
+
+2. You need to get a room ID, usually it is in the end of URL of your web client (ex. `https://example.org/#/rooms/!opaque_id:example.org`) or you can look it up in `Synapse Admin` from step before. \
+   Room ID should look like `!opaque_id:example.org`
+
+### From now we have several options
+
+We can use **login/password path** or **access token** (useful for OIDC setup)
+
+### Getting access token (optional)
+
+You need to use this command in your terminal:
+
+```
+curl -XPOST -d '{"type":"m.login.password", "user":"your_username", "password":"your_password"}' "https://your-matrix-server.com/_matrix/client/r0/login"
+```
+
+It returns your **access code**
+
+### Final Steps
+
+1. In the file `mod_data/notify.txt`, it must be like that if you are using **login/password**:
+   
+   ```
+   [notify]
+   url: matrixs://user:pass@example.org/{your room ID here}
+   name: my_ad5x
+   ```
+   or if you are using **access token**:
+
+   ```
+   [notify]
+   url: matrixs://token@example.org/{your room ID here}
+   name: my_ad5x
+   ```
+
+2. In the Fluidd/Moonraker console, **run the macro** ```UPDATE_NOTIFY```
+
+3. Wait for the reboot, if you do all right, you will get the message that printer is turned on.
+
+4. **You can send a notification using the macro ```_NOTIFY MSG=Test``` from the Fluidd/Mainsail console**
