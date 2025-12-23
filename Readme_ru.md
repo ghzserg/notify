@@ -131,10 +131,9 @@
 
 ### Получить ChatID
 
-1. Идете к [@RawDataBot](https://t.me/RawDataBot)
+1. Идете к [@userinfobot](https://t.me/userinfobot)
 2. `/start`
-3. Находите параметр `message->chat->id`
-4. Получаете длинный ID - его нужно будет прописать в `mod_data/notify.txt` заменив `{ChatID}` (например `123456789`)
+3. Получаете ID - его нужно будет прописать в `mod_data/notify.txt` заменив `{ChatID}` (например `123456789`)
 
 ### Прописать имя принтера
 

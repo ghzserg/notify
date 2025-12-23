@@ -133,10 +133,9 @@ How to register your own bot
 
 ### Get ChatID
 
-1. Go to [@RawDataBot](https://t.me/RawDataBot)
+1. Go to [@userinfobot](https://t.me/userinfobot)
 2. Send `/start`
-3. Find the parameter `message->chat->id`
-4. You will receive a long ID - it needs to be inserted into `mod_data/notify.txt`, replacing `{ChatID}` (e.g., `123456789`)
+3. You will receive a ID - it needs to be inserted into `mod_data/notify.txt`, replacing `{ChatID}` (e.g., `123456789`)
 
 ### Set the printer name
 
