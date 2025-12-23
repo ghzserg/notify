@@ -2,6 +2,21 @@
 
 This plugin allows you to configure notifications for [numerous services](https://github.com/caronc/apprise).
 
+| Feature / Capability | [Notify Plugin](https://github.com/ghzserg/notify/blob/main/Readme_ru.md) | [Moonraker Telegram Bot](https://github.com/ghzserg/zmod/wiki/Telegram_ru) |
+| :--- | :---: | :---: |
+| **Requires external server** | – | + |
+| **Remote printer control** | – (possible via [zmod.link](https://zmod.link)) | + |
+| **Timelapse creation** | – (possible via [timelapse plugin](https://github.com/ghzserg/timelapse/blob/main/Readme_ru.md)) | + |
+| **Print event notifications** (start, pause, cancel, finish) | + | + |
+| **Filament sensor notifications** | + | + |
+| **Print progress percentage** | + | + |
+| **Multiple printers via a single bot** | + | – |
+| **Notifications via other services** | + | – |
+
+**Table explanation:**
+*   **+** — feature is supported or implemented.
+*   **–** — feature is missing or not directly supported.
+
 # Installation
 
 To use this plugin for your Flashforge AD5X/AD5M/AD5M Pro
