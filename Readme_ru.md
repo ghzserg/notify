@@ -200,7 +200,7 @@ curl -XPOST -d '{"type":"m.login.password", "user":"your_username", "password":"
    
    ```
    [notify]
-   url: matrixs://user:pass@example.org/{ID вашей комнаты}
+   url: matrixs://user:pass@example.org/{ID вашей комнаты}?v=2
    name: my_ad5x
    ```
    
@@ -208,7 +208,7 @@ curl -XPOST -d '{"type":"m.login.password", "user":"your_username", "password":"
 
    ```
    [notify]
-   url: matrixs://token@example.org/{ID вашей комнаты}
+   url: matrixs://token@example.org/{ID вашей комнаты}?v=2
    name: my_ad5x
    ```
 
