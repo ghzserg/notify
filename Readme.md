@@ -202,14 +202,14 @@ It returns your **access code**
    
    ```
    [notify]
-   url: matrixs://user:pass@example.org/{your room ID here}
+   url: matrixs://user:pass@example.org/{your room ID here}?v=2
    name: my_ad5x
    ```
    or if you are using **access token**:
 
    ```
    [notify]
-   url: matrixs://token@example.org/{your room ID here}
+   url: matrixs://token@example.org/{your room ID here}?v=2
    name: my_ad5x
    ```
 
