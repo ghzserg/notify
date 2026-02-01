@@ -53,6 +53,14 @@
 
 Список вариантов url можно получить на странице [Apprise](https://github.com/caronc/apprise)
 
+Если вы не хотите получать фотографии, то нужно выполнить следующий макрос:
+
+```SAVE_VARIABLE VARIABLE=notify_photo VALUE=0```
+
+Чтобы включить получение снимков:
+
+```SAVE_VARIABLE VARIABLE=notify_photo VALUE=1```
+
 ## Управление уведомлениями
 
 Принтер отправляет 2 типа уведомлений

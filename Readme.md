@@ -55,6 +55,14 @@ The value `5` can be replaced with any integer from 1 to 99.
 
 You can find a list of possible URLs on the [Apprise](https://github.com/caronc/apprise) page.
 
+If you don't want to receive photos, you need to run the following macro:
+
+```SAVE_VARIABLE VARIABLE=notify_photo VALUE=0```
+
+To enable photo receiving:
+
+```SAVE_VARIABLE VARIABLE=notify_photo VALUE=1```
+
 ## Notification Management
 
 The printer sends 2 types of notifications
