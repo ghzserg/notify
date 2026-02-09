@@ -5,7 +5,7 @@ This plugin allows you to configure notifications for [numerous services](https:
 | Feature / Capability | [Notify Plugin](https://github.com/ghzserg/notify/) | [Moonraker Telegram Bot](https://github.com/ghzserg/zmod/wiki/Telegram_en) |
 | :--- | :---: | :---: |
 | **Requires external server** | – | + |
-| **Remote printer control** | – (possible via [zmod.link](https://zmod.link)) | + |
+| **Remote printer control** | – (possible via [zmod.link](https://zmod.link/link/)) | + |
 | **Timelapse creation** | – (possible via [timelapse plugin](https://github.com/ghzserg/timelapse/)) | + |
 | **Print event notifications** (start, pause, cancel, finish) | + | + |
 | **Filament sensor notifications** | + | + |
