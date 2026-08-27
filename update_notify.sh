@@ -1,6 +1,7 @@
 #!/bin/sh
 
-source /opt/config/mod/.shell/0.sh
+[ -f /opt/config/mod/.shell/0.sh ] && source /opt/config/mod/.shell/0.sh
+[ -f /usr/data/zmod/zmod/.shell/0.sh ] && source /usr/data/zmod/zmod/.shell/0.sh
 
 if [ "$1" == 1 ]; then
     cp /opt/config/mod_data/notify.txt ${MOD}/root/printer_data/moonraker.secrets
